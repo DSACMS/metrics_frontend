@@ -3,10 +3,16 @@
 app/node_modules
 app/dist
 app/.env
+app/site/_data/*
+!app/site/_data/.keep
+app/site/_graphs/*
+!app/site/_graphs/.keep
+app/site/_posts/*
+!app/site/_posts/.keep
 app/site/img/*
+!app/site/img/.keep
 app/site/_includes/css
 app/site/_includes/js
-!app/site/img/.keep
 .vscode/
 scripts/metricsLib/__pycache__
 node_modules

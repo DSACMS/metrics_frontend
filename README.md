@@ -1,11 +1,15 @@
-# CMS Repository Metrics Website
+# CMS Repository Metrics Frontend
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/DSACMS/metrics/badge)](https://securityscorecards.dev/viewer/?uri=github.com/DSACMS/metrics)
 
 ## About the Project
-The CMS Repository Metrics Website shows an overview of software development activity across open source projects within a specified organization. This webpage is meant to be used by developers and program managers interested in repository health within CMS open source projects.
+<!-- The CMS Repository Metrics Website shows an overview of software development activity across open source projects within a specified organization. This webpage is meant to be used by developers and program managers interested in repository health within CMS open source projects. -->
+This repository contains the frontend UI for the Metrics dashboard, built with Eleventy, Liquid.js, and JavaScript.
 
 ### Project Vision
-A metrics website that automatically pulls GitHub Repository data each week to produce numerical statistics and visualizations to aid developers and PMs in monitoring project health.
+<!-- A metrics website that automatically pulls GitHub Repository data each week to produce numerical statistics and visualizations to aid developers and PMs in monitoring project health. -->
+This is a submodule used by:
+- metrics-external (public repository metrics)
+- metrics-internal (private repository metrics)
 
 ## Core Team
 An up-to-date list of core team members can be found in [MAINTAINERS.md](MAINTAINERS.md).
@@ -23,16 +27,13 @@ An up-to-date list of core team members can be found in [MAINTAINERS.md](MAINTAI
 ## Repository Structure
 <!-- TODO: Using the "tree -d" command can be a helpful way to generate this information, but, be sure to update it as the project evolves and changes over time.-->
 ```
-├── app
-│   ├── dist
-│   ├── node_modules
-│   ├── site
-│   └── src
-├── scripts
-│   ├── _metadata
-│   ├── metricsLib
-│   └── tests
-└── templates
+└── app/ 
+    ├── site/
+    │   ├── _data/
+    │   ├── _graphs/
+    │   └── _posts/
+    ├── src/
+    └── .eleventy.js
 ```
 
 # Development and Software Delivery Lifecycle 
@@ -40,6 +41,7 @@ An up-to-date list of core team members can be found in [MAINTAINERS.md](MAINTAI
 The following guide is for members of the project team who have access to the repository as well as code contributors. The main difference between internal and external contributions is that external contributors will need to fork the project and will not be able to merge their own pull requests. For more information on contribributing, see: [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Local Development
+
 
 ### Getting Started
 
