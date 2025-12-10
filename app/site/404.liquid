@@ -1,0 +1,48 @@
+---
+layout: base
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+<div class="grid-container">
+    <section class="usa-section">
+        <div class="grid-row grid-gap">
+            <div class="tablet:grid-col-8">
+                <h1>Page not found</h1>
+                <p class="usa-intro">
+                    We’re sorry, we can’t find the page you're looking for. The site
+                    administrator may have removed it, changed its location, or made
+                    it otherwise unavailable.
+                </p>
+                <p>
+                    If you typed the URL directly, check your spelling and
+                    capitalization.
+                </p>
+                <p>
+                    Visit our homepage for helpful tools and resources, or contact us
+                    and we’ll point you in the right direction.
+                </p>
+                <div class="margin-y-5">
+                    <ul class="usa-button-group">
+                        <li class="usa-button-group__item">
+                            <a href="{{ "/" | url }}" class="usa-button">Visit homepage</a>
+                        </li>
+                        <li class="usa-button-group__item">
+                            <a href="{{ "/organizations/" | url }}" class="usa-button">View organizations</a>
+                        </li>
+                        <li class="usa-button-group__item">
+                            <a href="{{ "/projects/" | url }}" class="usa-button">View projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="usa-prose">
+                    <h2>Popular pages</h2>
+                    <ul>
+                        <li><a href="{{ "/organizations/" | url }}">Organizations</a> - View metrics on our GitHub Organizations</li>
+                        <li><a href="{{ "/projects/" | url }}">Projects</a> - View metrics on our repositories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
