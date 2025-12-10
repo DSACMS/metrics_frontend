@@ -63,6 +63,23 @@ module.exports = function (eleventyConfig) {
     return fs.existsSync(filePath)
   })
 
+  // eleventyConfig.addFilter("readDocs", function(filename) {
+  //   const fs = require("fs")
+  //   const path = require("path")
+  //   const filePath = path.join(__dirname, "../docs", filename)
+  //   return fs.readFileSync(filePath, "utf8")
+  // })
+
+  eleventyConfig.addShortcode("renderDocs", function(filename) {
+    const fs = require("fs")
+    const path = require("path")
+    const filePath = path.join(__dirname, "../docs", filename)
+    const content = fs.readFileSync(filePath, "utf8")
+    const markdownIt = require("markdown-it")
+    const md = markdownIt({ html: true })
+    return md.render(content)
+  })
+
   // Create a collection of items without permalinks so that we can reference them
   // in a separate shortcode to pull in partial content directly
   eleventyConfig.addCollection("partials", (collectionApi) =>
