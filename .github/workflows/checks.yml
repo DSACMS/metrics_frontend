@@ -11,11 +11,17 @@ jobs:
       url_to_json: 'https://raw.githubusercontent.com/DSACMS/repo-scaffolder/main/tier3/%7B%7Bcookiecutter.project_slug%7D%7D/repolinter.json'
   
   repolinter-checks:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     name: Tier 3 Checks
     needs: resolve-repolinter-json
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
     env:
       RAW_JSON: ${{ needs.resolve-repolinter-json.outputs.raw-json}}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - uses: actions/checkout@v4
       - run: echo $RAW_JSON > repolinter.json
@@ -39,7 +45,7 @@ jobs:
           #   non-intrusive notification.
           #
           # Default: "exit-code"
-          output_type: 'issue'
+          output_type: 'exit-code'
 
           # The title to use for the issue created by repolinter-action. This title
           # should indicate the purpose of the issue, as well as that it was created by

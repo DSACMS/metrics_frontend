@@ -1,10 +1,14 @@
 const isProduction = process.env.ELEVENTY_ENV.includes("production")
 const isTest = process.env.ELEVENTY_ENV.includes("test")
+const isPrivate = process.env.GITHUB_PRIVATE_REPO === "true"
 
 const host = (isProduction && !isTest) ? "https://dsacms.github.io" : "http://localhost:8080"
 
 // For modifying the <base> tag
 const baseurl = isProduction ? "/metrics" : "" 
+
+// For modification between public and private repos
+const githubBaseUrl = isPrivate ? "https://github.cms.gov" : "https://github.com"
 
 module.exports = {
   name: "CMS Metrics Website",
@@ -12,6 +16,7 @@ module.exports = {
   description: "Powered by the Open Source Program Office (OSPO) at the Digital Service at the Centers for Medicare and Medicaid Services.",
   type: "website",
   baseurl,
+  githubBaseUrl,
   url: `${host}${baseurl}`,
   domain: (host || "").replace("https://", ""),
   production: isProduction,
