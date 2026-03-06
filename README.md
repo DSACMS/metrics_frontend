@@ -4,20 +4,11 @@
 ## About the Project
 The CMS Repository Metrics Website shows an overview of software development activity across open source projects within a specified organization. This webpage is meant to be used by developers and program managers interested in repository health within CMS open source projects.
 
-### Project Mission
-<!-- [TODO] -->
-
 ### Project Vision
 A metrics website that automatically pulls GitHub Repository data each week to produce numerical statistics and visualizations to aid developers and PMs in monitoring project health.
 
 ## Core Team
 An up-to-date list of core team members can be found in [MAINTAINERS.md](MAINTAINERS.md).
-
-### Team Mission
-<!-- [TODO] -->
-
-### Agency Mission
-<!-- [TODO] -->
 
 ## Documentation Index 
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
@@ -164,3 +155,12 @@ For more information and resources about SBOMs, visit: https://www.cisa.gov/sbom
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/) as indicated in [LICENSE](LICENSE).
 
 All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest.
+ 
+ ## Project Mission 
+<!-- Provide the core mission and objectives driving this project. --> 
+ 
+ ## Agency Mission 
+<!-- Provide the mission of the agency and how this project aligns. --> 
+ 
+ ## Team Mission 
+<!-- Provide the team's mission and how they work together. --> 

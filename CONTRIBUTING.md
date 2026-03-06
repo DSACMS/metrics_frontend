@@ -161,23 +161,10 @@ request will be closed.
 The changes in the pull request will be collapsed into a single commit, but the
 authorship metadata will be preserved.
 
-## Shipping Releases
-<!-- [TODO] -->
-
 ## Documentation
 
 We also welcome improvements to the project [documentation](docs/Main.md) or to the existing
 docs. Please file an [issue](https://github.com/DSACMS/metrics/issues/new).
-
-<!--
-## Governance
-Information about how the {{ cookiecutter.project_name }} community is governed may be found in [GOVERNANCE.md](GOVERNANCE.md).
--->
-
-<!--
-## Glossary
-Information about terminology and acronyms used in this documentation may be found in [GLOSSARY.md](GLOSSARY.md).
--->
 
 ## Policies
 
