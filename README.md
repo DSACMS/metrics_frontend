@@ -4,11 +4,20 @@
 ## About the Project
 The CMS Repository Metrics Website shows an overview of software development activity across open source projects within a specified organization. This webpage is meant to be used by developers and program managers interested in repository health within CMS open source projects.
 
+### Project Mission
+<!-- [TODO] -->
+
 ### Project Vision
 A metrics website that automatically pulls GitHub Repository data each week to produce numerical statistics and visualizations to aid developers and PMs in monitoring project health.
 
 ## Core Team
 An up-to-date list of core team members can be found in [MAINTAINERS.md](MAINTAINERS.md).
+
+### Team Mission
+<!-- [TODO] -->
+
+### Agency Mission
+<!-- [TODO] -->
 
 ## Documentation Index 
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
