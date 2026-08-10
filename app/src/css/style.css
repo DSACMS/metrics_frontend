@@ -651,6 +651,48 @@ iframe:focus, [href]:focus, [tabindex]:focus, [contentEditable=true]:focus {
   margin: 1.5px;
 }
 
+/* Project Type Tag Colors - keyed off project.projectType (see filters.json) */
+.usa-tag.project-type-tag {
+  color: var(--default-white);
+  border-radius: var(--radius-sm);
+}
+
+.usa-tag.project-type-tag.package-tag {
+  background-color: #7A288A;
+}
+
+.usa-tag.project-type-tag.website-tag {
+  background-color: var(--primary-dark-color);
+}
+
+.usa-tag.project-type-tag.standards-tag {
+  background-color: #B50909;
+}
+
+.usa-tag.project-type-tag.libraries-tag {
+  background-color: #008817;
+}
+
+.usa-tag.project-type-tag.data-tag {
+  background-color: #E29500;
+}
+
+.usa-tag.project-type-tag.apps-tag {
+  background-color: #12798A;
+}
+
+.usa-tag.project-type-tag.tools-tag {
+  background-color: #4B4B4B;
+}
+
+.usa-tag.project-type-tag.apis-tag {
+  background-color: #C2255C;
+}
+
+.usa-tag.project-type-tag.docs-tag {
+  background-color: #2E4D6B;
+}
+
 @media (max-width: 767px) {
   .usa-header {
     align-items: stretch;

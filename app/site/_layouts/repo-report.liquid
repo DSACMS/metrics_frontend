@@ -50,8 +50,7 @@ layout: base
   
     <div class="secondary-tag-group">
       {% if project.projectType %}
-        <span class="{{ item.name | slug }}-tag">{{ item.name }}</span>
-        <span class="usa-tag usa-tag--big main-tag {{ project.projectType | slug }}-tag">{{ project.projectType }}</span>
+        <span class="usa-tag usa-tag--big main-tag project-type-tag {{ project.projectType | slug }}-tag">{{ project.projectType }}</span>
       {% endif %}
       {% if project.maturityModelTier %}
         <span class="usa-tag usa-tag--big main-tag">TIER {{ project.maturityModelTier }}</span>
